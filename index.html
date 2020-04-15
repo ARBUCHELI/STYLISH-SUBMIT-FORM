@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta chartset="utf-8">
+	<title>Submit Form</title>
+	<link href="styles.css" rel="stylesheet">
+</head>
+<body>
+	<div id="main">
+		<header class="header">
+			<h1 id="title">Andrés R. Bücheli Survey Form</h1>
+	     	<h1 id="subtitle">Front-End Web Developer</h1>
+	     	<p id="description">Thank you for taking the time to help us serve you better</p>
+	     </header>
+	     <form id="survey-form">
+	     	<div class="form-group">
+	     		<label id="name-label" for="name">Name</label>
+	     		<input
+	     			type="text"
+	     			name="name"
+	     			id="name"
+	     			class="form-control"
+	     			placeholder="Enter your name"
+	     			required
+	     			/>
+	     	</div>
+	     	<div class="form-group">
+	     		<label id="email-label" for="email">Email</label>
+	     		<input 
+	     			type="email"
+	     			name="email"
+	     			id="email"
+	     			class="form-control"
+	     			placeholder="Enter your Email"
+	     			required
+	     			/>
+	     	</div>
+	     	<div class="form-group">
+	     		<label id="number-label" for="number"
+	     		>Age<span class="clue">(optional)</span></label>
+
+	     		<input						
+	     			type="number"
+	     			name="age"
+	     			id="number"
+	     			min="10"
+	     			max="99"
+	     			class="form-control"
+	     			placeholder="Age"
+	     			/>
+	     	</div>
+	     	<div class="form-group">
+	     		<p>Which option best describes your type of business?</p>
+	     		<select id="dropdown" name="role" class="form-control"
+	     		required>
+	     			<option disabled selected value>Select your type of business</option>
+	     			<option value="sole-propietorship">Sole Propietorship</option>
+	     			<option value="Partnership">Partnership</option>
+	     			<option value="Limited Liability Company (LLC">Limited Liability Company</option>
+	     			<option value="Corporation">Corporation</option>
+	     			<option value="other">Other</option>
+	     		</select>
+	     	</div>
+	     	<div class="form-group">
+	     		<p>Would you recommend Andrés R. Bücheli Front-End Web Developer to a friend?</p>
+	     		<label>
+	     			<input
+	     				name="recommendation"
+	     				value="definitely"
+	     				type="radio"
+	     				class="input-radio"
+	     				checked
+	     				/>Definitely</label>
+	     		<label>
+	     			<input 
+	     				name="recommendation"
+	     				value="maybe"
+	     				type="radio"
+	     				class="input-radio"
+	     				/>Maybe</label>
+	     		<label
+	     			><input
+	     				name="recommendation"
+	     				value="I'm not-sure"
+	     				type="radio"
+	     				class="input-radio"
+	     				/>I'm not sure</label>
+	     	</div>
+	     	<div class="form-group">
+	     		<p>What is your favorite service of Andrés R. Bücheli Front-End Web Developer?</p>
+	     		<select id="most-like" name="mostLike" class="form-control" required>
+	     			<option disabled selected value>Please select an option</option>
+	     			<option value="single-page-app">Single Page Apps using React</option>
+	     			<option value="single-angular">Single Page Apps using Angular</option>
+	     			<option value="design">Web Design</option>
+	     			<option value="php-apps">PHP Apps</option>
+	     		</select>
+	     	</div>
+	     	<div class="form-group">
+	     		<p>What would you like to see improved?
+	     			<span class="clue">(Check all that apply)</span>
+	     		</p>
+
+	     		<label
+	     		><input
+	     			name="prefer"
+	     			value="front-end-projects"
+	     			type="checkbox"
+	     			class="input-checkbox"
+	     			/>Front-end Projects</label
+	     		>
+	     		<label>
+	     			<input 
+	     				name="prefer"
+	     				value="back-end-projects"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Back-end Projects</label
+	     		>
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="single-apps-react"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Single Apps with React</label
+	     		>
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="single-apps-angular"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Single Apps with Angular</label
+	     		>
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="single-apps-angular"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Single Apps with Angular</label
+	     		>
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="php-projects"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>PHP Projects</label
+	     		>
+
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="customer-support"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Customer Support</label
+	     		>
+
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="visual-design"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Visual Design</label
+	     		>
+
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="delivery-time"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Delivery Time</label
+	     		>
+
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="data-visualization"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Data Visualization</label
+	     		>
+
+	     		<label>
+	     			<input
+	     				name="prefer"
+	     				value="updates-and-maintenance-operations"
+	     				type="checkbox"
+	     				class="input-checkbox"
+	     			/>Updates and Maintenance Operations</label
+	     		>
+
+	     		<div class="form-group">
+	     			<p>Do you have anny comments or suggestions?</p>
+	     			<textarea
+	     				id="comments"
+	     				class="input-textarea"
+	     				name="comment"
+	     				placeholder="Please enter your comment here..."
+	     				></textarea>
+	     		</div>
+
+	     		<div class="form-group">
+	     			<button type="submit" id="submit" class="submit-button">
+	     				Submit
+	     			</button>
+	     		</div>
+	     		</form>
+	     	</div>
+	     </form>
+	   </div>
+</body>
+</html>
+
