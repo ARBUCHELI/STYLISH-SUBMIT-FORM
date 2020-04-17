@@ -13,4 +13,4 @@ A beautiful and responsive submit form that implements advanced HTML and advance
 1. Download and unzip the repository folder.
 2. Open the index.html file in Google Chrome to see the project.
 
-Author: Andrés R. Bucheli.
+# Author: Andrés R. Bucheli.
